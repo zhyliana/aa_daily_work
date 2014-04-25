@@ -1,0 +1,6 @@
+<h1>Fix your cat!</h1>
+<form action="<%=cat_url(@cat)%>" method="POST">
+  <input type="hidden" name="_method" value="PATCH">
+  <%= render partial: 'form' %>
+  <input type="submit" value="Fix Your Cat!"></input>
+</form>

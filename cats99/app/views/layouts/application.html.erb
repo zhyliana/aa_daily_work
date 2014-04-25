@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>99 Cats</title>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+    <p>hey there, <%= session_user.try(:user_name) || "unknown user #{session_user}" %></p>
+
+    <%= flash[:notice] %>
+
+    <%= yield %>
+  </body>

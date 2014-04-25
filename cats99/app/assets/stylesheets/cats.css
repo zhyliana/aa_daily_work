@@ -1,0 +1,60 @@
+// Place all the styles related to the cats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+  position: relative;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.table {
+  font-size: 13px;
+  font-weight: normal;
+  background-color: #222;
+}
+
+
+.docs {
+  position: relative;
+  background-color: #fff
+}
+
+/* Keep code small in tables on account of limited space */
+p {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* Outline button for use within the docs */
+.btn {
+  color: #563d7c;
+  background-color: transparent;
+  border-color: #563d7c;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  color: #fff;
+  background-color: #563d7c;
+  border-color: #563d7c;
+}
+
+.dropdown {
+  position: static;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Forms */
+
+.bs-example-form .input-group {
+  margin-bottom: 10px;
+}
+.bs-example > textarea.form-control {
+  resize: vertical;
+}

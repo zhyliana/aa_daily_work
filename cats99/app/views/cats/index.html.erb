@@ -1,0 +1,26 @@
+<body class="bs-docs-home">
+  <h1 class="header">All Cats</h1>
+  <table>
+  <th>Name</th><th>Age</th><th>Color</th><th>Sex</th><th>Birthday</th>
+  <% @cats.each do |cat| %>
+   <tr>
+     <td><%= cat.name %></td>
+     <td><%= cat.age %></td>
+     <td class="dropdown"><%= cat.color %></td>
+     <td><%= cat.sex %></td>
+     <td><%= cat.birth_date %></td>
+   </tr>
+   <%end%>
+  </table>
+
+  <% if logged_in? %>
+    <input type="submit" value="Log Out" action="logout">
+      <%= logout %>
+    </input>
+  <% else %>
+    <%= link_to "New", new_session_path %>
+    </input>
+  <% end %>
+
+</body>
+
